@@ -56,4 +56,8 @@ And Data will have following details :
 * nccReference
 * responseText
 
-
+## Test credit card details
+Following TEST credit card can be used to test your integration.
+* Card No : 4564456445644564
+* Expiry Date : 05/20
+* CCV : 123
