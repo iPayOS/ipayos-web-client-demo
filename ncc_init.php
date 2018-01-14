@@ -20,7 +20,7 @@
     $jsonRequest['email']=$_REQUEST['email'];
     $jsonRequest['clientReference']="test001";
     $jsonRequest['redirectUrl']="http://localhost/yazhii-ncc-client-demo/ncc_complete.php";
-    $jsonResponse = RestClient::sendRequest("https://www.yazhii.net/settle/ncc_controller.php", json_encode($jsonRequest));
+    $jsonResponse = RestClient::sendRequest("https://www.yazhii.net/ncc/ncc_controller.php", json_encode($jsonRequest));
     $responseObject = json_decode($jsonResponse);
 ?>
 <html>
