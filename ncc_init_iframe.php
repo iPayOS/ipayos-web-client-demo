@@ -2,7 +2,7 @@
 /*  
     Yazhi NCC Demo
     Author : vkajamugan@yazhii.net
-    Description : This PHP implement the NCC init request.
+    Description : This PHP implement the NCC init request for IFrame method.
 */
 
     include "RestClient.php";

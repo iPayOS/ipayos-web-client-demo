@@ -23,7 +23,8 @@
                             </h3>
                         </div>
                         <div class="panel-body">
-                            <form role="form" action="ncc_init.php">
+                            <!-- form role="form" action="ncc_init_iframe.php" -->
+                            <form role="form" action="ncc_init_redirect.php">
                                 <div class="form-group">
                                     <label for="amount">
                                         Amount</label>
