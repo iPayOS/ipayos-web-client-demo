@@ -19,7 +19,7 @@
     $jsonRequest['msisdn']=$_REQUEST['mobileNumber'];
     $jsonRequest['email']=$_REQUEST['email'];
     $jsonRequest['clientReference']="test001";
-    $jsonRequest['redirectUrl']="http://localhost/yazhii-ncc-client-demo/ncc_complete.php";
+    $jsonRequest['redirectUrl']="http://localhost/yazhii-ncc-client/ncc_complete.php";
     $jsonResponse = RestClient::sendRequest("https://www.yazhii.net/ncc/ncc_controller.php", json_encode($jsonRequest));
     $responseObject = json_decode($jsonResponse);
     header('Location: '.$responseObject->data->paymentPageUrl);

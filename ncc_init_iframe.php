@@ -36,6 +36,6 @@
     </head>
 
     <body class="col-md-6">
-        <iframe class="col-lg-12 holds-the-iframe"  height="500" width="100%" frameBorder="0" src="<?php echo $responseObject->data->paymentPageUrl; ?>"> </iframe> 
+        <iframe class="col-lg-12 holds-the-iframe"  height="600" width="100%" frameBorder="0" src="<?php echo $responseObject->data->paymentPageUrl; ?>"> </iframe> 
     </body>
 </html>
