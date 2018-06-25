@@ -10,8 +10,29 @@ Yazhi NCC provides easy smart and secured platform for payments. It builds singl
 * Deploy in WEB Server (Eg. Apache)
 * Browse index.php
 
+## Payment Flows
+### Store card and pay seemlessly
+* NCC CARD INIT Request
+* NCC CARD INIT Response with redirection URL
+* Redirect to Bank/Payment Gateway
+* Enter Card Details
+* Redirect to User
+* NCC CARD COMPLETE Request
+* NCC CARD COMPLETE Response with cardToken. Successfully stored card.
+* NCC PAYMENT DIRECT Request using above cardToken
+* NCC PAYMENT DIRECT response. Successful payment.
+
+### On the fly enter card details
+* NCC INIT Request
+* NCC INIT Response with redirection URL
+* Redirect to Bank/Payment Gateway
+* Enter Card Details
+* Redirect to User
+* NCC CARD COMPLETE Request
+* NCC CARD COMPLETE Response. Successful payment.
+
 ## Request Messages & Parameters
-There are 2 type of messages, normally used to do a successful payment. All messages should be sent in JSON format and Responses also should be decoded as JSON format.
+There are 5 types of messages, normally used to do a successful payment. All messages should be sent in JSON format and Responses also should be decoded as JSON format.
 ### NCC INIT Request
 This message will be sent from client to NCC to initiate the payment request. Following parameters will be used to generate this message :
 * clientId
