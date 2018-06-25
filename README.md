@@ -1,4 +1,4 @@
-# Yazhi NCC payment gateway client
+# iPayOS payment gateway client
 
 Yazhi NCC provides easy smart and secured platform for payments. It builds single and common bridge for merchants, service providers, consumers and money authorities, which brings new user experience in fintech.
 
