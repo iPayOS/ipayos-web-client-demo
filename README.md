@@ -101,7 +101,7 @@ And Data will have following details :
 * cardExpiry
 * cardToken
 
-### NCC PAYAMENT DIRECT Request
+### NCC PAYMENT DIRECT Request
 This message will be sent from client to NCC to do direct payment using stored card (cardToken) request. Following parameters will be used to generate this message :
 * clientId
 * token
@@ -111,7 +111,7 @@ This message will be sent from client to NCC to do direct payment using stored c
 * cardToken
 * clientReference
 
-#### NCC PAYAMENT DIRECT Response
+#### NCC PAYMENT DIRECT Response
 This will contain following parameters :
 * status
 * statusDescription
