@@ -56,6 +56,71 @@ And Data will have following details :
 * nccReference
 * responseText
 
+### NCC CARD INIT Request
+This message will be sent from client to NCC to initiate the card storing request. Following parameters will be used to generate this message :
+* clientId
+* token
+* secret
+* requestType = "NCC_CARD_INIT"
+* cardName
+* cardType
+* msisdn
+* email
+* clientReference
+* redirectUrl
+
+#### NCC CARD INIT Response
+This will contain following parameters :
+* status
+* statusDescription
+* data 
+
+And Data will have following details :
+* requestId
+* paymentPageUrl
+
+### NCC CARD COMPLETE Request
+This message will be sent from client to NCC to complete the payment request. Following parameters will be used to generate this message :
+* clientId
+* token
+* secret
+* requestType = "NCC_CARD_COMPLETE"
+* requestId
+
+#### NCC CARD COMPLETE Response
+This will contain following parameters :
+* status
+* statusDescription
+* data 
+
+And Data will have following details :
+* nccReference
+* responseText
+* cardType
+* CardNumber
+* cardExpiry
+* cardToken
+
+### NCC PAYAMENT DIRECT Request
+This message will be sent from client to NCC to do direct payment using stored card (cardToken) request. Following parameters will be used to generate this message :
+* clientId
+* token
+* secret
+* requestType = "NCC_PAYMENT_DIRECT"
+* transactionAmount
+* cardToken
+* clientReference
+
+#### NCC PAYAMENT DIRECT Response
+This will contain following parameters :
+* status
+* statusDescription
+* data 
+
+And Data will have following details :
+* nccReference
+* responseText
+
 ## Test credit card details
 Following TEST credit card can be used to test your integration.
 * Card No : 4564456445644564
