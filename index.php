@@ -32,7 +32,7 @@
                                         <span class="input-group-addon"><span class="glyphicon glyphicon-usd"></span></span>
                                         <input type="text" class="form-control" id="amount" name="amount" placeholder="Enter amount"
                                             required autofocus />
-                                        
+
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -59,11 +59,9 @@
                             </form>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
     </body>
 </html>
-
-

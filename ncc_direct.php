@@ -18,7 +18,7 @@
     $jsonRequest['transactionAmount']= '200.00';
     $jsonRequest['clientReference']="test001";
     $jsonRequest['cardToken']="xxxxxxxxxxxxxxx";
-    $jsonResponse = RestClient::sendRequest("https://www.yazhii.net/ncc/ncc_controller.php", json_encode($jsonRequest));
+    $jsonResponse = RestClient::sendRequest("https://www.ipayos.com/ncc_controller.php", json_encode($jsonRequest));
     $responseObject = json_decode($jsonResponse);
     echo $jsonResponse;
 ?>

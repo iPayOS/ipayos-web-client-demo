@@ -1,5 +1,5 @@
 <?php
-/*  
+/*
     Yazhi NCC Demo
     Author : vkajamugan@yazhii.net
     Description : This PHP implement the NCC init request for IFrame method.
@@ -8,19 +8,19 @@
     include "RestClient.php";
 
     // Payment gateway API credentials
-        
+
     $jsonRequest['clientId']="XXXX";
-    $jsonRequest['token']="token_xxxxxxxx";   
+    $jsonRequest['token']="token_xxxxxxxx";
     $jsonRequest['secret']="secret_xxxxx";
-        
-        
+
+
     $jsonRequest['requestType']="NCC_INIT";
     $jsonRequest['transactionAmount']=$_REQUEST['amount'];
     $jsonRequest['msisdn']=$_REQUEST['mobileNumber'];
     $jsonRequest['email']=$_REQUEST['email'];
     $jsonRequest['clientReference']="test001";
-    $jsonRequest['redirectUrl']="http://localhost/yazhii-ncc-client/ncc_complete.php";
-    $jsonResponse = RestClient::sendRequest("https://www.yazhii.net/ncc/ncc_controller.php", json_encode($jsonRequest));
+    $jsonRequest['redirectUrl']="http://localhost/yazhii-ipayos-client-demo/ncc_complete.php";
+    $jsonResponse = RestClient::sendRequest("https://www.ipayos.com/ncc_controller.php", json_encode($jsonRequest));
     $responseObject = json_decode($jsonResponse);
 ?>
 <html>
@@ -36,6 +36,6 @@
     </head>
 
     <body class="col-md-6">
-        <iframe class="col-lg-12 holds-the-iframe"  height="600" width="100%" frameBorder="0" src="<?php echo $responseObject->data->paymentPageUrl; ?>"> </iframe> 
+        <iframe class="col-lg-12 holds-the-iframe"  height="600" width="100%" frameBorder="0" src="<?php echo $responseObject->data->paymentPageUrl; ?>"> </iframe>
     </body>
 </html>

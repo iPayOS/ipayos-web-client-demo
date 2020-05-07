@@ -20,7 +20,7 @@
         
         $jsonRequest['requestType']="NCC_CARD_COMPLETE";
         $jsonRequest['requestId']=$requestId;
-        $jsonResponse = RestClient::sendRequest("https://www.yazhii.net/ncc/ncc_controller.php", json_encode($jsonRequest));
+        $jsonResponse = RestClient::sendRequest("https://www.ipayos.com/ncc_controller.php", json_encode($jsonRequest));
         $responseObject = json_decode($jsonResponse);
         
         // print response
