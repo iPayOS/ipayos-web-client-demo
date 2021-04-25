@@ -145,5 +145,5 @@ And Data will have following details :
 ## Test credit card details
 Following TEST credit card can be used to test your integration.
 * Card No : 4564456445644564
-* Expiry Date : 05/20
+* Expiry Date : 05/22
 * CCV : 123
