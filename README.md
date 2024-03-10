@@ -3,9 +3,9 @@
 iPayOS provides easy smart and secured platform for payments. It builds single and common bridge for merchants, service providers, consumers and money authorities, which brings new user experience in fintech.
 
 ## How to run
-* Register as Business user in https://www.ipayos.com/register.php, Login to iPayOS.
+* Register as Business user in [https://www.ipayos.com/register.php](https://portal.ipayos.com/#/), Login to iPayOS.
 * Retrieve Client ID, Token & Secret from Dashboard -> Payment Gateway Panel.
-* Checkout/Download the project from https://gitlab.com/yazhii-community/yazhii-ncc-client-demo.git
+* Checkout/Download the project from [https://gitlab.com/yazhii-community/yazhii-ncc-client-demo.git](https://github.com/iPayOS/ipayos-web-client-demo)
 * Replace your Client ID, Token & Secret in both ncc_init.php & ncc_complete.php
 * Deploy in WEB Server (Eg. Apache)
 * Browse index.php
